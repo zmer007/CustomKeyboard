@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/keyboard_contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/keyboard_inputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999"
+        android:minHeight="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/keyboard_inputEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/app_name"
+            android:maxLines="5"/>
+
+        <Button
+            android:id="@+id/keyboard_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="b1"/>
+
+        <Button
+            android:id="@+id/keyboard_button2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="b2"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/keyboard_customKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="805px"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="50sp"/>
+    </FrameLayout>
+</LinearLayout>
